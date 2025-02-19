@@ -1,6 +1,6 @@
 # Solitude
 
-#From the new guy
+From the new guy
 Sorry, this is a temporary workspace to work on this. I'm probably gonna make this repo private soon.
 
 > ⚠️ **NOTICE #1:** I am looking for the QC quake code source files to [Halo Revamped](https://www.youtube.com/watch?v=B_GB9LLBATQ) (r17?) for N3DS! Without this, I must use decompilation of lost code to preserve the firefight features.
