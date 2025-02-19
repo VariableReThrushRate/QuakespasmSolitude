@@ -423,6 +423,19 @@ void Sys_Error (const char *error, ...)
 	va_end (argptr);
 
 #ifdef VITA
+	// Get SDL version
+    SDL_version compiled;
+    SDL_version linked;
+
+    SDL_VERSION(&compiled);  // Get the version SDL was compiled with
+    SDL_GetVersion(&linked); // Get the version SDL is linked against
+
+    // Print the versions
+    sceClibPrintf("Compiled with SDL version: %d.%d.%d\n",
+           compiled.major, compiled.minor, compiled.patch);
+
+    sceClibPrintf("Linked with SDL version: %d.%d.%d\n",
+           linked.major, linked.minor, linked.patch);
 	sceClibPrintf(errortxt1);
 	sceClibPrintf(errortxt2);
 	sceClibPrintf(text);
@@ -445,7 +458,7 @@ void Sys_Printf (const char *fmt, ...)
 	va_list argptr;
 
 	va_start(argptr, fmt);
-	vprintf(fmt, argptr);
+	sceClibPrintf(fmt, argptr);
 	va_end(argptr);
 }
 

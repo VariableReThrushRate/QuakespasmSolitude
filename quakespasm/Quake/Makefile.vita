@@ -145,7 +145,7 @@ COMMON_LIBS:= -lvitaGL -lvitashark -lvorbisfile -lvorbis -logg  -lspeexdsp -lmpg
 	-lSceNet_stub -lSceNetCtl_stub -lpng -lSceDisplay_stub -lSceGxm_stub -lSceShaccCg_stub \
 	-lSceSysmodule_stub -lSceCtrl_stub -lSceTouch_stub -lSceMotion_stub -lm -lSceAppMgr_stub \
 	-lSceAppUtil_stub -lScePgf_stub -ljpeg -lSceRtc_stub -lScePower_stub -lcurl -lssl -lcrypto -lz \
-	-lSceHid_stub -lSceCommonDialog_stub -lSceAudio_stub
+	-lSceHid_stub -lSceCommonDialog_stub -lSceAudio_stub -lSceAudioIn_stub -lSceShaccCgExt -ltaihen_stub
 
 ifeq ($(USE_ZLIB),1)
 CFLAGS+= -DUSE_ZLIB
